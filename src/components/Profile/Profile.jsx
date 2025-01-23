@@ -1,14 +1,14 @@
 import clsx from "clsx";
 import css from "./Profile.module.css";
 
-export default function Profile(props) {
+export default function Profile(userData) {
   const {
     username: name,
     tag,
     location,
     avatar: image = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
     stats,
-  } = props;
+  } = userData;
   const keys = Object.keys(stats);
 
   return (
